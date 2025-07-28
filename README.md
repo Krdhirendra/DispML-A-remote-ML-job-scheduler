@@ -3,7 +3,7 @@
 A lightweight, socket-based system to distribute machine learning training jobs from a central server to multiple remote worker machines.  
 This project aims to simulate a minimal GPU-renting or compute-sharing platform for ML model training.
 
-- > ⚒️ UNDER CONSTRUCTION
+- > ⚒️ UNDER PROGRESS
 - > ⚠️ Currently supports only CPU workers.
 
 ---
