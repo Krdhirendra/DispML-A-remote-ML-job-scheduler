@@ -40,6 +40,10 @@ This project aims to simulate a minimal GPU-renting or compute-sharing platform 
 - ❗ No database/backend — everything is socket-based and in-memory
 
 ---
+## ✍️ Mandatory Instructions
+- > Project directory structure should not be changed
+- > If running the server and worker on diffrent devices make sure to change the IP address in main_server.py and main_worker.py to IP_add of host
+  
 
 ## ⚙️ Setup & Run
 
@@ -48,30 +52,28 @@ This project aims to simulate a minimal GPU-renting or compute-sharing platform 
 1. Clone the Repository
 git clone https://github.com/your-username/distributed-ml-server.git
 cd distributed-ml-server
+
 2. Start the Server
-bash
-Copy
-Edit
-python server.py
+python main_server.py
+
 3. Start One or More Workers
 (on same or different machines)
+python main_worker.py
 
-bash
-Copy
-Edit
-python worker.py
+
 🗂️ Project Structure
-bash
-Copy
-Edit
-distributed-ml-server/
-├── server.py          # Main server logic
-├── worker.py          # Client/worker device logic
-├── Sender.py          # Utility to send zipped directories
-├── job_queue/         # Contains job files to assign
-├── logs/              # Logs of completed jobs
-├── LICENSE.md         # Custom license
-└── README.md
+├── servers
+    main_server.py
+    server_1.py
+    get_info.py
+    all_models
+      waiting
+        #here should be the project directory with main model script as ***modelss.py*** 
+      working
+        #after the job gets assigned the project directory will be transfered here
+├── workers
+    main_worker.py
+    worker_1.py
 ```
 
 ## 💡 Ideas for Future Expansion
