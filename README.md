@@ -88,3 +88,5 @@ python main_worker.py
 
 ⏱️ Built over several fragmented days effort (due to academic load lol).
 📫 Contact: krdhirendra2006@gmail.com
+
+### *I’m a learner, so there might be mistakes or bugs in the project.Feel free to contribute, suggest improvements, or just reach out — I'm always open to learning!*
