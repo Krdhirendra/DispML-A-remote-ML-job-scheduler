@@ -50,7 +50,7 @@ This project aims to simulate a minimal GPU-renting or compute-sharing platform 
 
 ```(bash
 1. Clone the Repository
-git clone https://github.com/your-username/distributed-ml-server.git
+git clone https://github.com/Krdhirendra/DispML-A-remote-ML-job-scheduler.git
 cd distributed-ml-server
 
 2. Start the Server
