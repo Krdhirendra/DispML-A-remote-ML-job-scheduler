@@ -3,49 +3,49 @@
 A lightweight, socket-based system to distribute machine learning training jobs from a central server to multiple remote worker machines.  
 This project aims to simulate a minimal GPU-renting or compute-sharing platform for ML model training.
 
-- > ⚒️ UNDER PROGRESS
-- > ⚠️ Currently supports only CPU workers.
+- > UNDER PROGRESS
+- > Currently supports only CPU workers.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📤 Send a directory containing full training `datasets + scripts` from server to worker
-- 🧠 Train models remotely on remote worker machines
-- 🔁 Auto job assignment: idle workers are picked automatically and jobs are assigned to them
-- 🔄 Auto-retry: if a worker dies mid-job, the job is reassigned to another worker and dead worker is dropped
-- ❤️ Heartbeat checks: continiously check wheter the worker alive or not
-- 🪵 Logging: in terminal shows which worker is doing what
+- Send a directory containing full training `datasets + scripts` from server to worker
+- Train models remotely on remote worker machines
+- Auto job assignment: idle workers are picked automatically and jobs are assigned to them
+- Auto-retry: if a worker dies mid-job, the job is reassigned to another worker and dead worker is dropped
+- Heartbeat checks: continiously check wheter the worker alive or not
+- Logging: in terminal shows which worker is doing what
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 **`SERVER --> WORKER` communication:**
 
-- 📡 Workers connect and register
-- ⌚ Workers are listed and they wait to get a job assigned to them by server
-- 📥 Server maintains a job queue
-- ⏳ if job queue is empty Server waits for jobs, assigns work
-- 🛠️ Workers receive scripts, train model, and send back trained model
-- 📶 Server tracks worker health
+- Workers connect and register
+- Workers are listed and they wait to get a job assigned to them by server
+- Server maintains a job queue
+- if job queue is empty Server waits for jobs, assigns work
+- Workers receive scripts, train model, and send back trained model
+- Server tracks worker health
 
 ---
 
-## ⚒️ Current Limitations 
+## Current Limitations 
 (working on this)
 
-- ❗ No GPU support yet (easy to add)
-- ❗ No multi-worker distribution per job (1 job → 1 worker)
-- ❗ No database/backend — everything is socket-based and in-memory
+- No GPU support yet (easy to add)
+- No multi-worker distribution per job (1 job → 1 worker)
+- No database/backend — everything is socket-based and in-memory
 
 ---
-## ✍️ Mandatory Instructions
+## Mandatory Instructions
 - > Project directory structure should not be changed
 - > If running the server and worker on diffrent devices make sure to change the IP address in main_server.py and main_worker.py to IP_add of host
   
 
-## ⚙️ Setup & Run
+## Setup & Run
 
 
 ```(bash
