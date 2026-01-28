@@ -61,7 +61,7 @@ python main_server.py
 python main_worker.py
 
 
-🗂️ Project Structure
+Project Structure
 ├── servers
     main_server.py
     server_1.py
@@ -76,13 +76,13 @@ python main_worker.py
     worker_1.py
 ```
 
-## 💡 Ideas for Future Expansion
-- ✅ worker filtering over available gpu
-- ✅ Parallel training (split one job across multiple workers)
-- ✅ Web dashboard using FastAPI or Flask
-- ✅ Secure file transfer (encryption, verification)
+##  Ideas for Future Expansion
+-  worker filtering over available gpu
+-  Parallel training (split one job across multiple workers)
+-  Web dashboard using FastAPI or Flask
+-  Secure file transfer (encryption, verification)
 
-## 👤 About the Creator
+##  About the Creator
 - This project was developed by ***DHIRENDRA KUMAR*** (Krdhirendra) as a solo learner.
 -  AI tools (like ChatGPT and DeepSeek) has been extensively used to assist with coding, but the architecture, logic, and execution were fully self-built.
 
